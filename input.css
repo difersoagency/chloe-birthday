@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: Agba;
+    src: url("Agbalumo.ttf");
+  }
+
+  @font-face {
+    font-family: Loubag;
+    src: url("Loubag-Bold.ttf");
+  }
+
+
+  .loubag {
+    font-family: Loubag;
+  }
+ 
+
+  .agba {
+    font-family: Agba;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-70%);
+    }
+  }
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 13s linear infinite;
+  }
+
+  .lilita {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @keyframes gerakAtas {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15vw);
+    } /* Geser ke kanan */
+    100% {
+      transform: translateY(0);
+    } /* Kembali ke posisi awal */
+  }
+
+  @keyframes gerakBawah {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10vw);
+    } /* Geser ke kanan */
+    100% {
+      transform: translateY(0);
+    } /* Kembali ke posisi awal */
+  }
+
+  /* Animasi gerak kanan-kiri */
+  @keyframes gerakKananKiri {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(60vw);
+    } /* Geser ke kanan */
+    100% {
+      transform: translateX(0);
+    } /* Kembali ke posisi awal */
+  }
+
+  @keyframes gerakKi {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-60vw);
+    } /* Geser ke kanan */
+    100% {
+      transform: translateX(0);
+    } /* Kembali ke posisi awal */
+  }
+
+  /* Styling untuk gambar */
+  .animasi-gerak {
+    display: block;
+    animation: gerakKananKiri 6s infinite ease-in-out;
+  }
+
+  .animasi-atas {
+    display: block;
+    animation: gerakAtas 6s infinite ease-in-out;
+  }
+
+  .animasi-bawah {
+    display: block;
+    animation: gerakBawah 4s infinite ease-in-out;
+  }
+
+  /* Styling untuk gambar */
+  .animasi-gerak2 {
+    display: block;
+    animation: gerakKi 4s infinite ease-in-out;
+  }
