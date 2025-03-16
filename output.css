@@ -8,9 +8,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-200: oklch(0.924 0.12 95.746);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
@@ -363,6 +365,15 @@
       max-width: 96rem !important;
     }
   }
+  .mx-\[4vw\] {
+    margin-inline: 4vw;
+  }
+  .mx-\[8vw\] {
+    margin-inline: 8vw;
+  }
+  .mx-\[10vw\] {
+    margin-inline: 10vw;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -398,6 +409,9 @@
   }
   .mt-\[26vw\] {
     margin-top: 26vw;
+  }
+  .mt-\[36vw\] {
+    margin-top: 36vw;
   }
   .mr-\[-14vw\] {
     margin-right: -14vw;
@@ -531,6 +545,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -539,6 +556,9 @@
   }
   .w-\[6vw\] {
     width: 6vw;
+  }
+  .w-\[10vw\] {
+    width: 10vw;
   }
   .w-\[20vw\] {
     width: 20vw;
@@ -1224,6 +1244,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1236,6 +1259,9 @@
   .bg-transparent {
     background-color: transparent;
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .-bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1247,6 +1273,15 @@
   .bg-radial {
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\'\.\/images\/atm\.jpg\'\)\] {
+    background-image: url('./images/atm.jpg');
+  }
+  .bg-\[url\(\'\.\/images\/atm2\.jpg\'\)\] {
+    background-image: url('./images/atm2.jpg');
+  }
+  .bg-\[url\(\'\.\/images\/atm3\.avif\'\)\] {
+    background-image: url('./images/atm3.avif');
   }
   .bg-\[url\(\'\.\/images\/bonbot\.png\'\)\] {
     background-image: url('./images/bonbot.png');
@@ -1420,6 +1455,9 @@
   .px-\[4vw\] {
     padding-inline: 4vw;
   }
+  .px-\[5vw\] {
+    padding-inline: 5vw;
+  }
   .px-\[6vw\] {
     padding-inline: 6vw;
   }
@@ -1452,6 +1490,9 @@
   }
   .py-\[5vw\] {
     padding-block: 5vw;
+  }
+  .py-\[6vw\] {
+    padding-block: 6vw;
   }
   .text-center {
     text-align: center;
@@ -1498,6 +1539,9 @@
   .font-serif {
     font-family: var(--font-serif);
   }
+  .text-\[2vw\] {
+    font-size: 2vw;
+  }
   .text-\[3\.3vw\] {
     font-size: 3.3vw;
   }
@@ -1528,6 +1572,10 @@
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
@@ -1608,6 +1656,9 @@
   }
   .text-\[\#76379d\] {
     color: #76379d;
+  }
+  .text-\[\#e24a8e\] {
+    color: #e24a8e;
   }
   .text-\[\#e4679f\] {
     color: #e4679f;
@@ -2364,6 +2415,10 @@
   initial-value: 0;
 }
 @property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
